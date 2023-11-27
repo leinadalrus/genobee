@@ -1,5 +1,5 @@
 #include "./genobee.hpp"
-#include "include/minunit.h"
+#include "../include/minunit.h"
 
 int main() {
   std::printf("Genobee");
