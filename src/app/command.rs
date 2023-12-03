@@ -12,7 +12,7 @@ struct CompositeCommand;
 
 // ... into InputHandler [Copy, Clone traits]
 #[derive(Copy, Clone)]
-struct InputHandler {
+struct InputHandler { 
     observe_command: CompositeCommand,
     dispose_command: CompositeCommand,
 }
