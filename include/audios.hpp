@@ -10,4 +10,13 @@ public:
     void mute_sound(int sound_id);
 };
 
+class AudioServiceAnnul {
+  ~AudioServiceAnnul() = default;
+
+  void destroy(AudioServiceAnnul *self, void *user_table_data) {
+    delete self;
+    self = nullptr;
+  }
+}
+
 #endif

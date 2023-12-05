@@ -8,3 +8,6 @@ wasm-pack.log
 # Sublime
 *.sublime-project
 *.sublime-workspace
+
+# Visual Studio Code
+*.code-workspace
