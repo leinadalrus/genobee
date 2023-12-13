@@ -144,7 +144,7 @@ conditions.
 
 ### Questions & Answers
 
-> Q: How is this a "Webby" RPC build system?
+> Q: How is this a "Webby" build system?
 
 - A: Genobee is meant to mirror or at least loosely copy `brunch/brunch` but in a Peer-to-Peer (P2P) network sense. Like a Content Delivery Network (CDN).
 
@@ -160,6 +160,6 @@ conditions.
 
 - A: WASM Pack generated.
 
-> Q: There is a game within this supposed "Webby" RPC. Why is that?
+> Q: There is a game within this supposed "Webby" (automated) build system. Why is that?
 
 - A: The SDL2 game is meant for integration testing. Heck, it may turn into a full-fledged game! Maybe ... ?
