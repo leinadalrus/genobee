@@ -1,4 +1,4 @@
-edition = "2021"
+edition = "2018"
 
 brace_style                     = "PreferSameLine"
 color                           = "Always"

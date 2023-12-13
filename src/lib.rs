@@ -1,14 +1,13 @@
-mod app;
 mod utils;
 
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
 extern "C" {
-    fn log(s: &str);
+    fn alert(s: &str);
 }
 
 #[wasm_bindgen]
-pub fn index {
-    log("Hello, Genobee!");
+pub fn greet() {
+    alert("Hello, gen-o-bee!");
 }
