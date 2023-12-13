@@ -5,9 +5,12 @@
 ###### The Idea for Genobee:
 
 Experimental project in creating a basic UI in SDL2 v.s Raylib \[4.5] for the sake of Digital Signal Processing and Audio Streaming/Handling.
-_One side of me is like intralogue-ing on the idea I should just use ImGui, but the problem with ImGui is that it doesn't have Emscripten support for web-browser usage._
+_One side of me is like intralogue-ing on the idea I should just use ImGui, but the problem with ImGui is that Emscripten support for web-browser usage isn't as well documented as Raylib or SDL2._
 
 I've come to an epiphany that I should possibly direct this project into creating an accessible kind of "Flash" and "ActionScript" alternative to what modern web browsers currently offer. I hope I can garner more help and create a headless API for the project.
+
+Therefore ...
+> 'microui' and 'miniaudio' are going to be employed. Stable, not much in terms of recent, consistent updates, but works well with a tandem of designs.
 
 ##### Why not Yew and Tauri?
 
@@ -25,13 +28,14 @@ David Tolnay's CXX is used for multi-language tiers of the project.
 
 - I have C++14 code in the high-level programming tiers of the project because it's _"safer."_
 - It also helps if we in turn have to 'interop' with another user's C++ code, especially with Soloud being unupdated for years.
-- 'C89/90' itself (mainly this edition because it's Portable C, and not Common C) will not allow us to write code in a modern sense with polymorphism/inheritance. But will still be utilised for ARM vs x86_64 architecture interpreter(s) and compiler(s).
-- Procedural programming with some _this and that_ of functional and object-oriented programming would be nice. (_Oooooh_ maybe data-oriented programming as well!?)
+- 'C99' will not allow us to write code in a modern sense with polymorphism/inheritance. But will still be utilised for ARM vs x86_64 architecture interpreter(s) and compiler(s).
 - At some point in the program we'll need to use a Strategy design pattern with a Singleton since we're working with peripherals after all.
 
 #### `libc`
 
-'libc' enables us to 'interop' with the C code of PortAudio and 'libsndfile' which helps us do some explorative programming.
+'libc' enables us to 'interop' with the C code of 'miniaudio' and 'libsndfile' which helps us do some explorative programming.
+
+> We are going to remove and forget about PortAudio usage because 'miniaudio' already does what I want in a smaller package.
 
 - We can also test minimally. Testing for trivially but ideal unit tests before doing any form of non-context-free programming with how software revolves with Singletons combined with Strategy patterns sometimes.
 
