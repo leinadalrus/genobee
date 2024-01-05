@@ -1,28 +1,34 @@
 // supervisor.rs := Observer design pattern
 //
 
-enum WorkStates {
+enum WorkStates
+{
   Unassign,
   Assign,
   Kill
 }
 
-pub trait IObserver<T> {
+pub trait IObserver<T>
+{
   fn observe() -> T;
 }
 
-pub trait IDispatch<T> {
+pub trait IDispatch<T>
+{
   fn dispatch() -> Result<T, std::boxed::Box<Self>>;
 }
 
 struct Supervisor;
 
-impl Supervisor {}
+impl Supervisor
+{
+}
 
 struct Exercise {}
 
-struct Worker {
-  supervisor: Supervisor,
-  exercise: Exercise,
-  state: WorkStates
+struct Worker
+{
+  supervisor : Supervisor,
+  exercise : Exercise,
+  state : WorkStates
 }

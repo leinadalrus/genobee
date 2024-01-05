@@ -4,10 +4,11 @@ use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
 extern "C" {
-    fn alert(s: &str);
+  fn log(s : &str);
 }
 
 #[wasm_bindgen]
-pub fn greet() {
-    alert("Hello, gen-o-bee!");
+pub fn main()
+{
+  log("Hello, gen-o-bee!");
 }
